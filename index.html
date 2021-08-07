@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h5> Hoisting in JS(JavaScript) </h5>
+   <p> Hoisting is a Js mechanism where variables and function declarations 
+       are moved to the top of their scope before code executes. This part
+       is done when the program is being compiled (before the execution part). </p>
+    <h5>JavaScript Temporal Dead Zone</h5>
+    <p>Temporal Dead Zone where we’re trying to access a variable that has not yet been initialized (it has been declared and therefore exists, but has no value, not even undefined). It’s common to hear the phrase, “let/const don’t hoist” as a shorthand to remember this behavior. But technically something else is going on.<br>
+
+        When we use the var keyword, two things actually happen:<br>
+        
+        1)at compile time, the variable is added to the enclosing lexical scope<br>
+        2)at runtime, when the scope is entered any variables added to the lexical environment are initialized to the undefined value so they are available to use in the scope<br>
+        The let and const keywords do step 1–so technically they do hoist–but not step 2, the assignment to undefined. Therefore it’s more accurate to say that let/const do hoist but don’t get initialized.</p>
+    
+        <h5> Shadowing </h5>
+        <p>Now, when a variable is declared in a certain scope having the same name defined on its outer scope and when we call the variable from the inner scope, the value assigned to the variable in the inner scope is the value that will be stored in the variable in the memory space. This is known as Shadowing or Variable Shadowing
+
+        <script src = "script.js"></script>
+        </p>
+    </body>
+</html>
